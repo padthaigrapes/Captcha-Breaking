@@ -12,9 +12,21 @@ img = Image.open(BytesIO(response.content))
 #OCR using Tesseract
 text = image_to_string(img)
 
+print(text)
+
 #Displaying Result
 # Recognized Text must be in format = <NUM1><OPERATOR><NUM2>
-if(text[1]=='+'): print(int(text[0])+int(text[2]))
-if(text[1]=='-'): print(int(text[0])-int(text[2]))
-if(text[1]=='*'): print(int(text[0])*int(text[2]))
-if(text[1]=='/'): print(int(text[0])/int(text[2]))
+if(text[1]=='+'):
+  print(int(text[0])+int(text[2]))
+elif(text[1]=='-'): 
+	print(int(text[0])-int(text[2]))
+elif(text[1]=='*'): 
+	print(int(text[0])*int(text[2]))
+elif(text[1]=='/'): 
+	print(int(text[0])/int(text[2]))
+else:
+	print("You have given a special character")
+  
+#Press Enter 2 Times to get the Result
+  
+  
