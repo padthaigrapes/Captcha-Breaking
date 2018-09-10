@@ -8,4 +8,4 @@ Used Modules:
                    image from PIL(Python Image Library)                                        
                   BytesIO from io (for easy buffering)  
 
-Ran using <a href="https://www.pythonanywhere.com/">Python Anywhere</a> 
+Tested with <a href="https://www.pythonanywhere.com/">Python Anywhere</a> 
