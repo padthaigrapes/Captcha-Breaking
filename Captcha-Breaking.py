@@ -1,10 +1,11 @@
+#Import libraries
 from pytesseract import image_to_string 
 from PIL import Image
 from requests import get
 from io import BytesIO
 
 #Downloading Image from URL (SAMPLE)
-response = get("http://13.127.3.3/wp-content/uploads/image-1.png") 
+response = get("https://i.imgur.com/29FLrpe.png") 
 
 #Opening Image Object 
 img = Image.open(BytesIO(response.content))
@@ -26,7 +27,3 @@ elif(text[1]=='/'):
 	print(int(text[0])/int(text[2]))
 else:
 	print("You have given a special character")
-  
-#Press Enter 2 Times to get the Result
-  
-  
